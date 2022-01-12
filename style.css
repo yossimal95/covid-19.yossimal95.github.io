@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(240, 255, 254);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(223, 96, 117);  
+}
+
+.covid {
+    font-size: 16pt;;
+}
+
+.antigen {
+    margin-top: -15px;
+}
+
+.antigen-test {
+    cursor: pointer;
+    width: 200px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(194, 192, 192);
+}
+
+.strip {
+    width: 35%;
+    height: 180px;
+    background-color: rgb(255, 249, 249);
+    margin: auto;
+    border: 30px inset rgb(243, 242, 242);
+    position: relative;
+}
+
+.l {
+    position: absolute;
+    right: -85%;
+    font-size: 26pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(223, 96, 117);
+}
+
+.outcome {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 249, 249);
+}
+
+.outcome hr {
+    height: 8px;
+    border: none;
+}
+
+.negative {
+    background-color: rgb(245, 132, 151);
+}
+
+.positive {
+    background-color: rgb(211, 112, 128);
+}
+
+.specimen-well {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: 100px auto;
+    border-radius: 50%;
+    outline: 50px solid rgb(243, 242, 242);
+    transition: outline 1s;
+}
+
+.specimen-well:hover {
+    outline: 50px solid rgb(233, 233, 233);
+}
+
+h1 {
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    color:rgb(104, 60, 67);
+    cursor: default;
+}

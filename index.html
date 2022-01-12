@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE Antigen test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="antigen-test">
+        <p class="covid">COVID-19</p>
+        <p class="antigen">Antigen</p>
+        <div class="strip">
+            <div class="l">
+                <br>
+                C
+                <br>
+                <br>
+                T
+            </div>
+            <div class="outcome">
+                <br>
+                <br>
+                <hr class="negative">
+                <br>                
+                <br>
+                <br>
+                <br>
+                <hr class="positive">
+            </div>
+        </div>
+        <div class="specimen-well">
+
+        </div>
+    </div>
+
+    <h1>INSTRUCTIONS: click the specimen well and wait for the results.</h1>
+
+    <script>
+        $(document).ready(()=>{
+            $(".specimen-well").click(()=>{   
+                $(".positive").css("visibility", Math.floor(Math.random() * 100) % 2 > 0 ? "visible" : "hidden" );
+                $(".outcome").fadeIn(20000);                
+            });
+        });
+    </script>
+</body>
+</html>
