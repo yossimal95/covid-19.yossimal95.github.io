@@ -39,8 +39,13 @@
     <h1>INSTRUCTIONS: click the specimen well and wait for the results.</h1>
 
     <script>
+        var checked = false;
         $(document).ready(()=>{
             $(".specimen-well").click(()=>{   
+                if (checked) {
+                    return false;
+                }
+                checked = true;
                 $(".positive").css("visibility", Math.floor(Math.random() * 100) % 2 > 0 ? "visible" : "hidden" );
                 $(".outcome").fadeIn(20000);                
             });
